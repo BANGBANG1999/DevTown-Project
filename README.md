@@ -20,3 +20,7 @@ These instructions will help you set up and run the project on your local machin
    npm install
 
    npm run dev
+
+View the Website
+
+You can view the live version of the website at https://tinyurl.com/udayasish
