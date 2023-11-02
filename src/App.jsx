@@ -1,9 +1,10 @@
 
 import Data from "./Data"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Card from "./Card";
 import Categories from "./Categories";
 import styled from "styled-components";
+
 
 
 
@@ -60,7 +61,7 @@ function App() {
   const filteredItems = item.filter((val) =>
     category === "ALL" ? true : val.category === category
   );
-  // console.log(filteredItems);
+  console.log(filteredItems);
 
 
   // Calculate the range of products to display based on the current page
@@ -97,7 +98,7 @@ function App() {
     <>
       <Categories filterCategory={filterCategory} item={item} setItem={setItem} listItem={listItem} category={category} setCategory={setCategory} displayedProducts={displayedProducts} />
       <Card displayedProducts={displayedProducts} item={item}/>
-
+    
       <Wrapper>
         <div className="pagination">
           <i class="fa-solid fa-chevron-down fa-rotate-270 next" onClick={nextPage}></i>
